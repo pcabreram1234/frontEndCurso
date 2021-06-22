@@ -72,6 +72,10 @@
         align-items: center
     }
     
+    .header__menu__profile p {
+        font-size: 15px;
+    }
+    
     .header__menu__profile img {
         margin-right: 8px;
         width: 40px;
@@ -114,7 +118,7 @@
     
     .carousel {
         width: 100%;
-        overflow: scroll;
+        overflow-y: hidden;
         padding: 30px;
         position: relative;
     }
@@ -170,6 +174,7 @@
         right: 0;
         bottom: 0;
         display: flex;
+        align-self: flex-start;
         align-items: flex-end;
     }
     
@@ -183,12 +188,16 @@
         height: 15px;
     }
     
-    .carousel-item__details--title {
-        position: absolute;
-        font-size: 25px;
-        color: white;
+    .carousel-item__details,
+    p {
         display: flex;
+        align-content: space-between;
         align-self: flex-end;
+        font-size: 7.5px;
+        color: white;
+        font-family: 'Mulish', sans-serif;
+        flex-wrap: nowrap;
+        margin: 0% 1%;
     }
 </style>
 
@@ -221,9 +230,10 @@
                     <div class="carousel-item__details">
                         <img src="src/assets/static/play-icon.png" alt="">
                         <img src="src/assets/static/plus-icon.png" alt="">
+                        <p class="carousel-item__details--title">Título descriptivo</p>
+                        <p class="carousel-item__details--subtitle">2019 16+ 114 minutos</p>
                     </div>
-                    <p class="carousel-item__details--title">Título descriptivo</p>
-                    <p class="carousel-item__details--subtitle">2019 16+ 114 minutos</p>
+
                 </div>
 
                 <div class="carousel-item">
@@ -231,24 +241,50 @@
                     <div class="carousel-item__details">
                         <img src="src/assets/static/play-icon.png" alt="">
                         <img src="src/assets/static/plus-icon.png" alt="">
+                        <p class="carousel-item__details--title">Título descriptivo</p>
+                        <p class="carousel-item__details--subtitle">2019 16+ 114 minutos</p>
                     </div>
-                    <p class="carousel-item__details--title">Título descriptivo</p>
-                    <p class="carousel-item__details--subtitle">2019 16+ 114 minutos</p>
                 </div>
 
-                <!--    <div class="carousel-item">
+                <div class="carousel-item">
                     <img class="carousel__item-img" src="./src/assets/static/pexels-lelani-badenhorst-6790677.jpg" alt="">
+                    <div class="carousel-item__details">
+                        <img src="src/assets/static/play-icon.png" alt="">
+                        <img src="src/assets/static/plus-icon.png" alt="">
+                        <p class="carousel-item__details--title">Título descriptivo</p>
+                        <p class="carousel-item__details--subtitle">2019 16+ 114 minutos</p>
+                    </div>
+
                 </div>
                 <div class="carousel-item">
                     <img class="carousel__item-img" src="./src/assets/static/pexels-furknsaglam-4042112.jpg" alt="">
+                    <div class="carousel-item__details">
+                        <img src="src/assets/static/play-icon.png" alt="">
+                        <img src="src/assets/static/plus-icon.png" alt="">
+                        <p class="carousel-item__details--title">Título descriptivo</p>
+                        <p class="carousel-item__details--subtitle">2019 16+ 114 minutos</p>
+                    </div>
+
                 </div>
                 <div class="carousel-item">
                     <img class="carousel__item-img" src="./src/assets/static/pexels-liza-summer-6383173.jpg" alt="">
+                    <div class="carousel-item__details">
+                        <img src="src/assets/static/play-icon.png" alt="">
+                        <img src="src/assets/static/plus-icon.png" alt="">
+                        <p class="carousel-item__details--title">Título descriptivo</p>
+                        <p class="carousel-item__details--subtitle">2019 16+ 114 minutos</p>
+                    </div>
+
                 </div>
                 <div class="carousel-item">
                     <img class="carousel__item-img" src="./src/assets/static/pexels-monica-turlui-7165054.jpg" alt="">
+                    <div class="carousel-item__details">
+                        <img src="src/assets/static/play-icon.png" alt="">
+                        <img src="src/assets/static/plus-icon.png" alt="">
+                        <p class="carousel-item__details--title">Título descriptivo</p>
+                        <p class="carousel-item__details--subtitle">2019 16+ 114 minutos</p>
+                    </div>
                 </div>
- -->
             </div>
         </div>
     </section>
