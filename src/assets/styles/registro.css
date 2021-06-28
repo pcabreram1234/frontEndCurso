@@ -2,7 +2,7 @@ body {
     margin: 0;
     box-sizing: border-box;
     font-family: 'Mulish', sans-serif;
-    background: linear-gradient(#21C08B, #AB88FF);
+    background-repeat: round;
 }
 
 header {
@@ -19,33 +19,34 @@ header {
     margin: 10px 0px 0px 8px;
 }
 
-.register__container{
+.register__container {
     background: linear-gradient(#21C08B, #AB88FF);
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     text-align: center;
 }
 
-.register__container--form{
+.register__container--form {
+    font-size: 14px;
     display: flex;
     flex-direction: column;
     border: 1px solid white;
     border-radius: 20px;
     padding: 30px 40px;
-    background: rgb(93,155,246);
-    background: linear-gradient(0deg, rgba(93,155,246,0.1) 10%, rgba(49,250,76,0.1) 100%);
+    background: rgb(93, 155, 246);
+    background: linear-gradient(0deg, rgba(93, 155, 246, 0.1) 10%, rgba(49, 250, 76, 0.1) 100%);
     margin-bottom: 20px;
 }
 
-.register__container--form h2{
+.register__container--form h2 {
     color: white;
     font-size: 20px;
 }
 
-.input{
-    margin: 2px 0px ;
+.input {
+    margin: 2px 0px;
     padding: 10px 20px;
     border-top: 0px;
     border-left: 0px;
@@ -58,24 +59,24 @@ header {
     color: white;
 }
 
-
-::placeholder{
+::placeholder {
     color: white;
 }
 
-.singIng__container{
+.singIng__container {
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-top: 40px;  
+    margin-top: 40px;
 }
-.singIng__container a{
+
+.singIng__container a {
     text-decoration: none;
     color: white;
     font-size: 12px;
 }
 
-.button{
+.button {
     background: transparent;
     border-top: 0px;
     border-left: 0px;
@@ -88,23 +89,28 @@ header {
     color: white;
 }
 
-.footer{
-    background-color: #AB88FF;
-    width: 100%;
+.footer {
+    font-size: 14px;
     display: flex;
     flex-direction: row;
-    height: 80px;
-}
-.footer div:first-child{
-    margin-left: 8px;
+    height: 319px;
+    width: 100%;
+    background: #AB88FF;
 }
 
-.footer div{
+.footer div:first-child {
+    margin-left: 12px;
+}
+
+.footer div {
+    display: flex;
+    flex-direction: column;
+    padding-top: 280px;
     margin-bottom: 0px;
     margin-top: 0px;
 }
 
-.footer a{
+.footer a {
     color: white;
     font-size: 12px;
     margin-right: 10px;

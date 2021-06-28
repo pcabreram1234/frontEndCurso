@@ -132,8 +132,8 @@ header {
 .footer {
     font-size: 14px;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    /*     justify-content: center; */
     height: 100px;
     width: 100%;
     background: #AB88FF;
@@ -148,4 +148,17 @@ header {
 
 .footer a:hover {
     text-decoration: underline;
+}
+
+@media only screen and (max-width:600px) {
+    .login__container {
+        padding: 0px;
+        border: none;
+        background: transparent;
+        width: 100%;
+    }
+    .footer {
+        align-items: flex-start;
+        flex-direction: column;
+    }
 }
